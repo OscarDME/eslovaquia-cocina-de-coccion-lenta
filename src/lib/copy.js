@@ -1,329 +1,329 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // Doc §7: TODO el texto visible de la landing sale de este archivo.
 // Los componentes solo leen de aquí; nunca tienen texto propio.
-// Idioma: neerlandés (nl) — copy idéntico a la página original.
+// Idioma: eslovaco (sk) — transcreación adaptada al mercado eslovaco.
 // Convención "*Rich": array de segmentos {t, b?, hi?} para énfasis inline
 // (b = negrita, hi = resaltado verde). Se renderiza con RichText.astro.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const copy = {
   metadata: {
-    lang: 'nl',
-    title: 'Het beste 5⭐ slowcooker kookboek met 141 fantastische recepten',
+    lang: 'sk',
+    title: 'Najlepšia 5⭐ kuchárka pre pomalý hrniec so 141 fantastickými receptami',
     description:
-      'Zonder kookstress rond 17.00 aan tafel? 141 heerlijke, gezonde slowcooker recepten met gewone supermarkt-ingrediënten en een korte voorbereiding. 16.500+ gezinnen koken mee en geven gemiddeld 5 sterren.',
-    canonical: 'https://pomale-varenie.crearis.online',
+      'Chcete večeru bez stresu presne o 19:00? 141 chutných a zdravých receptov pre pomalý hrniec z bežných surovín a s rýchlou prípravou. Viac ako 16 500 rodín už podľa nich varí a hodnotí ich 5 hviezdičkami.',
+    canonical: 'https://bavno-gotvene.crearis.online',
     ogImage: '/og-cover.webp',
     ogType: 'website',
-    ogLocale: 'nl_NL',
-    siteName: 'Slowcooker kookboek',
+    ogLocale: 'sk_SK',
+    siteName: 'Kuchárka pre pomalý hrniec',
   },
 
   a11y: {
-    skipToContent: 'Ga naar hoofdinhoud',
-    reviewsRegion: 'Reviews van kopers',
-    valuePropsRegion: 'Voordelen in het kort',
-    footerNav: 'Footer',
-    starsLabel: 'sterren',
+    skipToContent: 'Prejsť na hlavný obsah',
+    reviewsRegion: 'Hodnotenia zákazníkov',
+    valuePropsRegion: 'Výhody v skratke',
+    footerNav: 'Pätičková navigácia',
+    starsLabel: 'hviezdičiek',
   },
 
   hero: {
-    title: 'Slowcooker kookboek',
-    subtitle: 'Zonder kookstress aan tafel aanschuiven? Dat wil toch iedereen!',
+    title: 'Kuchárka pre pomalý hrniec',
+    subtitle: 'Sadnúť si k stolu bez stresu a zhonu? O tom sníva každý!',
     socialProof: {
-      strong: '16.500+ gezinnen',
-      rest: ' koken met deze recepten en geven ze gemiddeld',
+      strong: 'Viac ako 16 500 rodín',
+      rest: ' už varí podľa týchto receptov s priemerným hodnotením ',
       stars: 5,
     },
-    ctaPrimary: { label: 'Bestel als e-books (pdf)', sub: 'goedkoper én gelijk in je mail' },
-    ctaSecondary: { label: 'Bestel hardcover kookboek', sub: 'levering Nederland' },
-    ctaTertiary: { label: 'Bestel hardcover kookboek', sub: 'levering Buitenland' },
+    ctaPrimary: { label: 'Objednať ako e-knihu (PDF)', sub: 'výhodnejšie a okamžite vo vašom e-maile' },
+    ctaSecondary: { label: 'Objednať tlačenú knihu', sub: 's doručením na Slovensku' },
+    ctaTertiary: { label: 'Objednať tlačenú knihu', sub: 's doručením do zahraničia' },
     noteRich: [
-      { t: 'In het hardcover kookboek staan dezelfde recepten als in e-book deel 1 t/m deel 4 (' },
-      { t: '141 recepten totaal', b: true },
-      { t: '). De recepten uit e-book deel 5 en deel 6 (' },
-      { t: '61 nieuwe recepten', b: true },
-      { t: ') zijn alleen digitaal beschikbaar.' },
+      { t: 'Tlačená kniha obsahuje rovnaké recepty ako e-knihy z častí 1 až 4 (' },
+      { t: 'spolu 141 receptov', b: true },
+      { t: '). Recepty z e-kníh, časti 5 a 6 (' },
+      { t: '61 nových receptov', b: true },
+      { t: ') sú dostupné len v digitálnom formáte.' },
     ],
-    pricePerRecipe: { pre: 'Slechts', amount: '€ 0,38', post: 'cent /recept' },
+    pricePerRecipe: { pre: 'Len', amount: '0,06 €', post: 'na recept' },
     book: {
-      title: 'Slowcooken',
-      subtitle: 'Simpel & Smaakvol',
-      author: 'Joyce van de Pas',
-      badge: '141 recepten',
-      spine: 'SLOWCOOKEN',
+      title: 'Pomalé varenie',
+      subtitle: 'Jednoducho a chutne',
+      author: 'Jana Kováčová',
+      badge: '141 receptov',
+      spine: 'POMALÉ VARENIE',
     },
-    imageAlt: 'Slowcooker gerecht met mals stoofvlees en verse groenten, klaar om te serveren',
+    imageAlt: 'Jedlo z pomalého hrnca s krehkým hovädzím mäsom a čerstvou zeleninou, pripravené na servírovanie',
   },
 
   valueProps: [
     {
       icon: 'pot',
-      title: 'Om 17.00 zó aan tafel',
-      text: 'Met ingrediënten uit de supermarkt én duidelijke uitleg.',
+      title: 'Večera je na stole presne o 19:00',
+      text: 'S bežnými surovinami z obchodu a jasnými, presnými pokynmi.',
     },
     {
       icon: 'clock',
-      title: 'Korte voorbereiding',
-      text: 'In een handomdraai het eten op tafel.',
+      title: 'Príprava zaberie minimum času',
+      text: 'Jedlo naservírujete doslova za zlomok času.',
     },
     {
       icon: 'chef',
-      title: 'Koken als een chefkok',
-      text: 'Restaurant-like, maar dan zelf gemaakt!',
+      title: 'Varenie zvládnete ako skutočný šéfkuchár',
+      text: 'Gurmánsky zážitok ako z reštaurácie, no pripravený v pohodlí domova!',
     },
   ],
 
   story: {
-    heading: 'Stressvrij avondeten',
+    heading: 'Večera úplne bez stresu',
     paragraphs: [
-      'Heb jij gebrek aan inspiratie als je het avondeten moet bedenken?',
-      'En tijdens de avondspits tijd tekort om lekker, gevarieerd én gezond te koken?',
-      'Ik herken die uitdagingen zo goed!',
+      'Stáva sa vám, že vám úplne dôjdu nápady, keď máte vymyslieť, čo uvariť na večeru?',
+      'A v tom najväčšom zhone po práci vám jednoducho neostáva čas na niečo chutné, rozmanité a zdravé?',
+      'Tak dobre vám rozumiem!'
     ],
     highlightRich: [
-      { t: 'Maar tegenwoordig zet ik binnen no-time ' },
-      { t: 'zalige slowcooker gerechten', hi: true },
-      { t: ' op tafel én ' },
-      { t: 'bespaar veel tijd', hi: true },
+      { t: 'Ale dnes vďaka pomalému hrncu za chvíľku servírujem ' },
+      { t: 'neskutočne chutné jedlá', hi: true },
+      { t: ' a zároveň ' },
+      { t: 'šetrím hromadu času', hi: true },
       { t: '!' },
     ],
-    question: 'Ook stressvrij rond 17.00 aan tafel?',
-    answer: 'Dan zijn mijn gezonde én lekkere recepten (141 in totaal) een uitkomst voor jou!',
-    closer: "Gewoon 's avonds gelijk lekker aan tafel aanschuiven, wie wil dat nu niet?",
-    imageAlt: 'Dampende slowcooker stoofpot met groenten, vers geserveerd op tafel',
+    question: 'Chcete mať aj vy pohodovú večeru presne o 19:00?',
+    answer: 'Potom bude mojich 141 zdravých a chutných receptov pre vás skutočnou záchranou!',
+    closer: 'Jednoducho si sadnete k stolu a vychutnáte si skvelé jedlo – kto by to nechcel?',
+    imageAlt: 'Výborne uvarené dusené mäso so zeleninou, ktoré sa parí priamo z pomalého hrnca na stole',
   },
 
   buyerReviews: {
-    heading: 'Wat andere kopers zeggen:',
+    heading: 'Čo hovoria ľudia, ktorí si ju už kúpili:',
     items: [
       {
-        name: 'Mir',
+        name: 'Mária',
         source: 'Trustpilot',
         rating: 5,
-        title: 'Ik heb onlangs alle drie de ebooks…',
+        title: 'Nedávno som si vzala všetky tri e-knihy…',
         quote:
-          'Ik heb onlangs alle drie de ebooks gekocht en ben er helemaal weg van! Ik heb er al meerdere keren recepten uit gekookt in mijn crock pot. Het is allemaal even lekker en makkelijk. Ik kook graag voor meerdere dagen en dat gaat super. De recepten zijn duidelijk en ook de bereidingstijd etc klopt goed! Ik wacht op nummer 4!',
+          'Kúpila som si všetky e-knihy a som do nich úplne zbláznená! Už som podľa nich v mojom pomalom hrnci varila viackrát. Všetko je také jednoduché a chutné. Rada varím na pár dní dopredu a funguje to super. Recepty sú veľmi zrozumiteľné a časy varenia sú absolútne presné! S netrpezlivosťou čakám na číslo 4!',
       },
       {
-        name: 'roelina Watzema-Postma',
+        name: 'Zuzana V.',
         source: 'Google',
         rating: 5,
-        title: 'Zeker de moeite waard!',
+        title: 'Určite stojí za to!',
         quote:
-          'Ik heb paar weken terug het slowcooker boek gekocht en wat werd ik er blij van toen ik het boek open sloeg. Het zit boordevol lekkere recepten, het staat goed aangegeven welke stappen je moet volgen en hoelang het in de slowcooker maken. Je vindt ook alle recepten voorin het wordt super aangeven. Zeker de moeite waard om het boek te kopen!!',
+          'Knihu som kúpila pred pár týždňami a hneď po otvorení som bola nadšená. Je plná skvelých receptov, kroky sú vysvetlené perfektne, rovnako ako aj to, ako dlho sa má jedlo dusiť v pomalom hrnci. Na začiatku je super praktický zoznam receptov. Určite stojí za každý jeden cent!!',
       },
       {
-        name: 'Annette Knijff',
+        name: 'Andrea K.',
         source: 'Trustpilot',
         rating: 5,
-        title: 'Het 3e kookboek van Joyce…',
+        title: 'Tretia kniha od Janky…',
         quote:
-          'Het 3e kookboek van Joyce natuurlijk ook gekocht en weer nog meer heerlijke recepten! Haar recepten zijn lekker, overzichtelijk, verse ingrediënten, verrassend! Ik krijg er veel inspiratie van en nog meer plezier om te koken!',
+          'Samozrejme, že som si kúpila aj tretiu Janinu knihu, a opäť som očarená! Jej recepty sú neskutočne chutné, prehľadné, z čerstvých surovín a prinášajú veľmi prekvapivé kombinácie! Dodáva mi to obrovskú inšpiráciu a teraz varím s ešte väčšou radosťou!',
       },
       {
-        name: 'Luenda',
+        name: 'Ľubica',
         source: 'Trustpilot',
         rating: 4,
-        title: 'Heerlijke recepten',
+        title: 'Skvelé recepty',
         quote:
-          'Heerlijke recepten. Eerste recept was gelijk goed gelukt, met andere kookboeken was het niet altijd gelijk goed. Deze kookboeken zijn echt een aanrader.',
+          'Veľmi chutné jedlá. Hneď prvý recept mi vyšiel na výbornú, čo sa s inými knihami na prvýkrát nie vždy stáva. Odporúčam všetkými desiatimi.',
       },
       {
-        name: 'H V',
+        name: 'Martin B.',
         source: 'Google',
         rating: 5,
-        title: 'Het beste boek over slowcooken',
+        title: 'Najlepšia kniha pre pomalé varenie',
         quote:
-          'Heb het kookboek voor mijzelf gekocht en er staan enorm veel lekkere maar makkelijke recepten in. Stap voor stap uitgelegd met eenvoudige ingrediënten. En het lukt altijd! Op het gebied van slowcooken is dit het beste boek dat ik ben tegengekomen! Een aanrader!',
+          'Kúpil som si ju pre seba a je v nej hrozne veľa jednoduchých, no super chutných receptov. Všetko je vysvetlené krok za krokom z bežne dostupných surovín. A vždy sa to podarí! Toto je tá najlepšia kniha pre pomalý hrniec, na akú som kedy natrafil. Vrelo odporúčam!',
       },
       {
-        name: 'Melanie van Dijk',
+        name: 'Milena D.',
         source: 'Trustpilot',
         rating: 5,
-        title: 'Heb deel 1 en 2 gekocht van slowcooker…',
+        title: 'Kúpila som si časť 1 a 2…',
         quote:
-          'Heb deel 1 en 2 gekocht van slowcooker recepten wat een leuk recepten en lekker ik raad iedereen aan om deze te kopen en proberen hartstikke leuk!',
+          'Kúpila som si prvé dve časti a poviem vám, aké sú tam fantastické recepty! Sú tak dobré, každému odporúčam, aby si ich zaobstaral a vyskúšal to, je to fakt obrovská zábava!',
       },
     ],
   },
 
   inspiration: {
-    heading: 'Nooit meer inspiratie gebrek',
-    subheading: 'Herken jij dit?',
+    heading: 'Koniec lámania si hlavy nad tým, čo uvariť',
+    subheading: 'Poznáte to?',
     paragraphs: [
-      'Je struint uren op internet naar het perfecte gerecht om in de slowcooker te maken.... je denkt iets gevonden te hebben en het uiteindelijke resultaat? Een waterig gerecht met weinig smaak.',
-      'Je bent niet de enige!',
-      'Maar het kan anders.',
+      'Hrabete sa hodiny na internete, aby ste našli dokonalé jedlo pre pomalý hrniec... myslíte si, že ste niečo objavili, a nakoniec výsledok? Vodová brečka bez akejkoľvek chuti.',
+      'Nie ste v tom sami!',
+      'Ale ide to aj inak.',
     ],
     highlight:
-      'Met dit kookboek hoef je maar 2x per jaar hetzelfde te eten, zoveel variatie heb je op je aanrecht liggen.',
-    cta: 'Ja, geef mij direct al die inspiratie!',
-    priceLabel: 'Nú voor',
-    price: '€ 54,95',
+      'S touto kuchárkou budete musieť jesť to isté jedlo len 2-krát do roka – toľko rozmanitosti zrazu vo svojej kuchyni budete mať.',
+    cta: 'Áno, chcem všetky tieto recepty hneď teraz!',
+    priceLabel: 'Teraz len za',
+    price: '8,90 €',
   },
 
   benefits: {
-    heading: 'Jouw voordelen op een rijtje',
+    heading: 'Vaše výhody v skratke',
     items: [
       {
-        title: "176 pagina's dik",
-        text: "Vol heerlijke recepten (141 stuks!), maar ook met extra tips, kooktijden en meer slowcooker informatie.",
+        title: '14-dňová záruka',
+        text: 'Nakupujete bez akéhokoľvek rizika. Ak nebudete spokojní, máte 14-dňovú záruku vrátenia peňazí.',
       },
       {
-        title: 'Gezond en smaakvol',
-        text: 'Gerechten met maximale smaak én op een gezonde basis met veel groenten zonder pakjes en zakjes.',
+        title: 'Zdravé a chutné',
+        text: 'Pripravíte jedlá plné chuti, zo zdravých surovín, s množstvom zeleniny a úplne bez umelých polotovarov.',
       },
       {
-        title: 'Gewone ingrediënten',
-        text: 'Alle ingrediënten voor mijn recepten zijn gewoon in de supermarkt verkrijgbaar.',
+        title: 'Dostupné suroviny',
+        text: 'Nakúpite všetky ingrediencie do mojich receptov aj v tom najmenšom bežnom supermarkete.',
       },
       {
-        title: 'Korte voorbereiding',
-        text: 'Duidelijke stap-voor-stap uitleg en een korte voorbereidingstijd: zet jij zonder veel werk een heerlijke maaltijd op tafel.',
+        title: 'Rýchla príprava',
+        text: 'Navaríte úžasnú večeru vďaka jasným postupom krok za krokom, a to bez hodín státia pri sporáku.',
       },
     ],
     categories: [
-      'Heerlijke stoofvlees recepten',
-      'Verrassende soepen',
-      "Zalig comfort food zoals risotto's, maar ook lekkere pasta-, kip- en visgerechten",
+      'Krehké a šťavnaté dusené hovädzie mäso',
+      'Prekvapivo chutné a sýte polievky',
+      'Poctivé domáce jedlá ako rizoto, ale aj úžasné recepty s cestovinami, kuracím mäsom a rybami',
     ],
   },
 
   socialReviews: {
-    heading: 'Wat ze op social media zeggen',
+    heading: 'Čo hovoria ľudia na sociálnych sieťach',
     items: [
       {
-        name: 'Carola Van de Steeg',
+        name: 'Kamila S.',
         source: 'WhatsApp',
         quote:
-          'Ja ben er echt zo blij mee, de witlof was echt heerlijk, de boerenkool zo lekker, billetjes in het gras echt een topper. Ik hou wel van de Hollandse pot. Maandag maak ik de chili con carne met een gepofte zoete aardappel.',
+          'Som taká šťastná, čakanka vyšla na výbornú, kučeravý kel tiež a recept s klobáskami je absolútny hit. Zbožňujem domácu stravu. V pondelok budem robiť chili con carne s pečenými sladkými zemiakmi.',
       },
       {
-        name: 'Marjon Spaandonk',
+        name: 'Margaréta S.',
         source: 'WhatsApp',
         quote:
-          'Vandaag de Orzo weer op, die is zo ontzettend lekker, ik ben blij met je recepten!',
+          'Dnes sme mali zasa orzo, je to neskutočne dobré, s tvojimi receptami som sa v kuchyni znovuzrodila!',
       },
       {
-        name: 'Alice Bijl - Roeters',
+        name: 'Alica B.',
         source: 'Facebook',
         quote:
-          'Het is ongelooflijk lekker!! Ik heb nog wat sambal toegevoegd. Mijn man vind het restaurant waardig!!',
+          'Neskutočná dobrota!! Pridala som aj trošku čili na spestrenie. Môj muž povedal, že je to jedlo na úrovni drahej reštaurácie!!',
       },
       {
-        name: 'Katrien Gorp',
+        name: 'Katka G.',
         source: 'Facebook',
         quote:
-          'Gisteren het boek binnen gekregen en vandaag de tomatensoep gemaakt. Goedgekeurd door mijn jongens dus die komt vaker op het menu.',
+          'Včera mi kniha prišla a dnes som hneď spravila paradajkovú polievku. Moji chalani ju schválili na 100 %, takže ju určite zaraďujeme do nášho pravidelného jedálnička.',
       },
       {
-        name: 'Carla Vilé',
+        name: 'Klára V.',
         source: 'Facebook',
-        quote: 'Vandaag de soto heerlijk!!!!!',
+        quote: 'Dnes som robila soto polievku, je proste brutálna!!!!!',
       },
       {
-        name: 'henkemifsud',
+        name: 'martin_m',
         source: 'Instagram',
-        quote: 'Mooi boek met heerlijke recepten.',
+        quote: 'Veľmi dobrá kniha so skvelými receptami.',
       },
     ],
   },
 
   showcase: {
-    heading: 'Tijd om iedereen omver te blazen met je gerechten!',
+    heading: 'Je čas zožať doma ovácie!',
     items: [
-      { title: 'Heerlijke stoofvlees recepten', imageAlt: 'Mals stoofvlees uit de slowcooker met wortels en kruiden' },
-      { title: 'Heerlijke soepen', imageAlt: 'Verse, romige soep bereid in de slowcooker' },
+      { title: 'Mäso, ktoré sa rozplýva na jazyku', imageAlt: 'Krehké mäso z pomalého hrnca s mrkvou a bylinkami' },
+      { title: 'Fantastické polievky', imageAlt: 'Svieža, krémová polievka pripravená v pomalom hrnci' },
     ],
   },
 
   finalCta: {
-    kicker: 'Slowcooker chefkok worden met gemak!',
-    heading: 'Laat de slowcooker je keuken veroveren!',
-    lead: 'Ga voor heerlijke, gezonde én gemakkelijke maaltijden.',
+    kicker: 'Staňte sa masterchefom pomalého hrnca bez námahy!',
+    heading: 'Nechajte pomalý hrniec premeniť vašu kuchyňu!',
+    lead: 'Vyberte si chutné, zdravé a jednoduché domáce jedlo.',
     paragraphs: [
-      'Verander je kookervaring met mijn slowcooker recepten. Ontdek zorgvuldig geselecteerde gerechten, handige tips en trucs, en geniet van smaakvolle maaltijden zonder gedoe.',
-      'Laat je vandaag nog inspireren en bespaar zeeën van tijd met zoeken naar recepten én het koken ervan!',
+      'Zmeňte spôsob, akým varíte, vďaka mojim receptom. Objavte starostlivo vybrané jedlá, šikovné triky a vychutnajte si skvelé večere bez zbytočného stresu.',
+      'Inšpirujte sa ešte dnes a ušetrite si hodiny hľadania receptov a únavného státia pri sporáku!'
     ],
-    cta: 'Bestel nu dit prachtige kookboek',
-    ctaNote: 'Nooit meer zoeken naar lekkere recepten!',
-    imageAlt: 'Het slowcooker kookboek met een dampend gerecht ernaast',
+    cta: 'Objednať túto úžasnú knihu hneď teraz',
+    ctaNote: '14-dňová záruka! Už nikdy si nelámte hlavu nad tým, čo budete variť!',
+    imageAlt: 'Kuchárka pre pomalý hrniec vedľa čerstvo uvareného, pariaceho sa jedla',
   },
 
   ratings: {
-    heading: 'Reviews',
+    heading: 'Hodnotenie',
     items: [
       {
         platform: 'Trustpilot',
         score: '4,8',
         max: '5',
         count: '208',
-        countLabel: 'reviews',
-        note: 'Geclaimd profiel',
+        countLabel: 'recenzií',
+        note: 'Overený profil',
       },
       {
         platform: 'Google',
         score: '4,8',
         max: '5',
         count: '89',
-        countLabel: 'reviews',
-        note: 'Mediabedrijf in Schijndel',
+        countLabel: 'recenzií',
+        note: 'Mediálna agentúra',
       },
     ],
   },
 
   testimonials: {
-    heading: 'Dit zeggen anderen over mijn recepten',
+    heading: 'Ďalšie ohlasy na moje recepty',
     items: [
       {
-        title: 'Iedereen eet zijn bord leeg!',
+        title: 'Všetci zjedia svoje porcie do posledného kúska!',
         quote:
-          'Sinds ik met jouw kookboek kook eten ook mijn pubers hun bord áltijd leeg zonder te klagen, ze vinden alles lekker!',
+          'Odkedy varím podľa tvojej knihy, dokonca aj moji tínedžeri všetko zjedia bez reptania, chutí im absolútne všetko!',
       },
       {
-        title: 'Ik hoef alleen nog maar te kiezen',
+        title: 'Stačí si len vybrať',
         quote:
-          'Ik vind het fantastisch! Zoveel variatie dat ik alleen maar even hoef te bladeren om weer iets zaligs op tafel te zetten.',
+          'Je to jednoducho fantastické! Je tam taká obrovská rozmanitosť, že stačí prelistovať pár strán a hneď viem, akú dobrotu dám dnes na stôl.',
       },
       {
-        title: 'Gewoon top!',
+        title: 'Proste top!',
         quote:
-          'Nooit gedacht dat ik zo lekker zou kunnen koken, met zo weinig moeite. Het is gewoon top!',
+          'Nikdy by som neverila, že môžem variť tak chutne s tak malou námahou. Proste top!',
       },
     ],
-    cta: 'Bestel nu',
+    cta: 'Objednať teraz',
   },
 
   about: {
-    heading: 'Iets meer over mij...',
-    name: 'Joyce van de Pas',
-    intro: 'Hi, ik ben Joyce van de Pas, slowcooker liefhebber van het eerste uur',
+    heading: 'Niečo málo o mne...',
+    name: 'Jana Kováčová',
+    intro: 'Ahojte, som Jana Kováčová a som zaprisahaná fanúšička pomalého hrnca',
     paragraphs: [
-      "Ik heb de slowcooker jaren geleden ooit ontvangen als cadeau en zo ben ik 'besmet' geraakt met het slowcookervirus.",
-      'Al meer dan 14 jaar experimenteer ik er op los met de slowcooker en ik gebruik hem zeker 3-4 keer per week.',
-      'Ik ben getrouwd en heb twee pubers; lang leve de drukke tijd van opgroeiende kinderen, verschillende roosters qua school en werk én alle diverse trainingstijden van sporten. Zonder de slowcooker zou het avondeten in ons gezin een stuk ingewikkelder en stressvoller zijn!',
-      'Wil je meer over mij weten, over mijn kookboek, slowcooker community of online slowcooker cursus? Stuur me gerust een mailtje, ik help je graag verder!',
+      'Pred rokmi som dostala pomalý hrniec ako darček a úplne som „prepadla“ kúzlu pomalého varenia.',
+      'Už viac ako 14 rokov smelo experimentujem a tento úžasný prístroj používam aspoň 3- až 4-krát týždenne.',
+      'Som vydatá a mám dvoch tínedžerov; nech žije blázinec s dospievajúcimi deťmi, najrôznejšími rozvrhmi v škole a práci, ako aj stovkami tréningov. Bez pomalého hrnca by bola večera v našej rodine oveľa zložitejšou a poriadne nervy drásajúcou úlohou!',
+      'Chcete sa o mne, mojej knihe alebo o našej komunite nadšencov pomalého varenia dozvedieť viac? Napíšte mi e-mail, rada vám odpoviem!'
     ],
-    cta: 'YESS, ik wil aan de slag met je kookboek',
-    imageAlt: 'Vers en kleurrijk gerecht, met liefde thuis bereid met de slowcooker',
+    cta: 'ÁNO, chcem začať variť podľa tejto knihy',
+    imageAlt: 'Svieže a farebné jedlo, pripravené s láskou doma v pomalom hrnci',
   },
 
   closing: {
-    heading: 'Recepten in kookboek',
-    primaryCta: 'Kookboek bestellen',
-    altCta: 'Nee, ik ga liever voor de e-books',
+    heading: 'Recepty v knihe',
+    primaryCta: 'Objednať knihu',
+    altCta: 'Nie, radšej chcem len e-knihy',
   },
 
   footer: {
-    brand: 'Slowcooker kookboek',
-    author: 'door Joyce van de Pas',
-    tagline: 'Stressvrij, gezond én lekker koken met de slowcooker — 141 recepten die altijd lukken.',
-    copyright: '© 2026 Mamsatwork · Alle rechten voorbehouden.',
+    brand: 'Kuchárka pre pomalý hrniec',
+    author: 'od Jany Kováčovej',
+    tagline: 'Varenie bez stresu, zdravo a chutne — 141 receptov, ktoré sa vždy podaria.',
+    copyright: '© 2026 Mamsatwork · Všetky práva vyhradené.',
     links: [
-      { label: 'Algemene voorwaarden', href: '#' },
-      { label: 'Privacybeleid', href: '#' },
-      { label: 'Contact', href: '#' },
+      { label: 'Všeobecné obchodné podmienky', href: '#' },
+      { label: 'Zásady ochrany osobných údajov', href: '#' },
+      { label: 'Kontakt', href: '#' },
     ],
   },
 };
