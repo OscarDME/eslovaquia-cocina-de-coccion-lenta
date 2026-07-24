@@ -36,15 +36,6 @@ export const copy = {
       stars: 5,
     },
     ctaPrimary: { label: 'Objednať ako e-knihu (PDF)', sub: 'výhodnejšie a okamžite vo vašom e-maile' },
-    ctaSecondary: { label: 'Objednať tlačenú knihu', sub: 's doručením na Slovensku' },
-    ctaTertiary: { label: 'Objednať tlačenú knihu', sub: 's doručením do zahraničia' },
-    noteRich: [
-      { t: 'Tlačená kniha obsahuje rovnaké recepty ako e-knihy z častí 1 až 4 (' },
-      { t: 'spolu 141 receptov', b: true },
-      { t: '). Recepty z e-kníh, časti 5 a 6 (' },
-      { t: '61 nových receptov', b: true },
-      { t: ') sú dostupné len v digitálnom formáte.' },
-    ],
     pricePerRecipe: { pre: 'Len', amount: '0,06 €', post: 'na recept' },
     book: {
       title: 'Pomalé varenie',
@@ -65,7 +56,7 @@ export const copy = {
     {
       icon: 'clock',
       title: 'Príprava zaberie minimum času',
-      text: 'Jedlo naservírujete doslova za zlomok času.',
+      text: 'Ráno pár minút na prípravu — a večer vás už čaká hotová večera.',
     },
     {
       icon: 'chef',
@@ -190,6 +181,48 @@ export const copy = {
     ],
   },
 
+  bonuses: {
+    eyebrow: 'Darčeky k objednávke navyše',
+    heading: 'Ku kuchárke pridávame 5 bonusov — úplne ZADARMO',
+    subheading: 'Aby ste z pomalého hrnca vyťažili naozaj maximum, k receptom vám pribalíme aj týchto 5 praktických pomocníkov:',
+    freeWord: 'ZADARMO',
+    items: [
+      {
+        tag: 'Bonus 1',
+        title: 'Jedálniček na 4 týždne',
+        text: '28 večerí naplánovaných za vás. Stačí otvoriť, uvariť a máte hotovo — koniec večnej otázky „čo dnes navarím?“.',
+        value: '12 €',
+      },
+      {
+        tag: 'Bonus 2',
+        title: 'Hotové nákupné zoznamy',
+        text: 'Ku každému týždňu prehľadný zoznam rozdelený podľa regálov v obchode. V supermarkete ste za pár minút a na nič nezabudnete.',
+        value: '9 €',
+      },
+      {
+        tag: 'Bonus 3',
+        title: 'Sprievodca „Už nikdy vodovo ani bez chuti“',
+        text: 'Tabuľka časov varenia na nízkom aj vysokom stupni, jednoduché pravidlá korenenia a zahusťovania a návod, ako pre pomalý hrniec upraviť ktorýkoľvek recept.',
+        value: '14 €',
+      },
+      {
+        tag: 'Bonus 4',
+        title: 'Varenie do zásoby a mrazenie',
+        text: 'Uvarte raz a jedzte celý týždeň. Ukážeme vám, ako jedlá správne rozdeliť na porcie, zamraziť a znovu ohriať bez straty chuti.',
+        value: '11 €',
+      },
+      {
+        tag: 'Bonus 5',
+        title: 'Extra kolekcia: dezerty z pomalého hrnca',
+        text: 'Približne 25 receptov na sladké — od hrejivých múčnikov po krémové dobroty, ktoré pripravíte úplne bez rúry.',
+        value: '19 €',
+      },
+    ],
+    totalLabel: 'Hodnota všetkých bonusov spolu',
+    totalValue: '65 €',
+    freeLine: 'Dnes ich k objednávke dostávate úplne ZADARMO.',
+  },
+
   socialReviews: {
     heading: 'Čo hovoria ľudia na sociálnych sieťach',
     items: [
@@ -239,9 +272,9 @@ export const copy = {
   },
 
   finalCta: {
-    kicker: 'Staňte sa masterchefom pomalého hrnca bez námahy!',
+    kicker: 'Staňte sa majstrom pomalého hrnca úplne bez námahy!',
     heading: 'Nechajte pomalý hrniec premeniť vašu kuchyňu!',
-    lead: 'Vyberte si chutné, zdravé a jednoduché domáce jedlo.',
+    lead: 'Doprajte si chutné, zdravé a jednoduché domáce jedlá.',
     paragraphs: [
       'Zmeňte spôsob, akým varíte, vďaka mojim receptom. Objavte starostlivo vybrané jedlá, šikovné triky a vychutnajte si skvelé večere bez zbytočného stresu.',
       'Inšpirujte sa ešte dnes a ušetrite si hodiny hľadania receptov a únavného státia pri sporáku!'
@@ -298,7 +331,7 @@ export const copy = {
   about: {
     heading: 'Niečo málo o mne...',
     name: 'Jana Kováčová',
-    intro: 'Ahojte, som Jana Kováčová a som zaprisahaná fanúšička pomalého hrnca',
+    intro: 'Ahojte, som Jana Kováčová a som zapálená fanúšička pomalého hrnca',
     paragraphs: [
       'Pred rokmi som dostala pomalý hrniec ako darček a úplne som „prepadla“ kúzlu pomalého varenia.',
       'Už viac ako 14 rokov smelo experimentujem a tento úžasný prístroj používam aspoň 3- až 4-krát týždenne.',
